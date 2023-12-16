@@ -13,10 +13,10 @@ class DBPlacesStore(
     }
 
     override suspend fun saveAllPlaces(places: List<Place>) {
-        val PlacesEntityList =
+        val placesEntityList =
             places.map {
                 PlacesEntity(it.id, it.name ?: "", it.display_location)
             }
-        return placesDao.insertAll(PlacesEntityList)
+        return placesDao.insertAll(placesEntityList)
     }
 }

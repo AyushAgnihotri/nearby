@@ -7,5 +7,5 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class UiModule {
     @ContributesAndroidInjector
-    abstract fun contributeHomeActivity(): MainActivity
+    abstract fun contributeMainActivity(): MainActivity
 }
